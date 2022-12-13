@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ds-clickwrap"></div>
+    <script src="https://demo.docusign.net/clickapi/sdk/latest/docusign-click.js"></script>
+    <script>
+      docuSignClick.Clickwrap.render(
+        {
+          environment: "https://demo.docusign.net",
+          accountId: "537e2029-7b85-4c30-99ed-79a2704b8807",
+          clickwrapId: 'e6972fb2-f023-4166-8f9c-fd6905f685e3',
+          clientUserId: "5d96fd78-525f-49c0-a1ac-80686c7c00b1",
+          documentData: {
+            fullName: "Junior Silva",
+            email: "2016trabalhosonline@gmail.com",
+            company: "Company",
+            title: "Job Title",
+            date: "Date",
+          },
+        },
+        "#ds-clickwrap"
+      );
+    </script>
+  </body>
+</html>
